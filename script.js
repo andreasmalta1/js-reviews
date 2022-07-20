@@ -39,48 +39,34 @@ const reviews = [
     },
   ];
 
+let personImage = document.getElementById('image')
+let personName = document.getElementById('name')
+let personJob = document.getElementById('job-position')
+let personReview = document.getElementById('review')
 
-let btnIncrement = document.getElementById('increment')
-let btnDecrement = document.getElementById('decrement')
-let btnReset = document.getElementById('reset')
-let counterNum = document.getElementById('counter')
+let id = 1
 
-btnIncrement.addEventListener('click', () => {
-    updateFunction(1)
-});
-btnDecrement.addEventListener('click', () => {
-    updateFunction(-1)
-});
-btnReset.addEventListener('click', () => {
-    updateFunction(0)
-});
+imageSrc = reviews[id-1]['img']
 
-function updateFunction(action){
-    if (action == 0){
-        counterNum.innerHTML = 0
-        return returnColor()
-    }
-    if (action == 1){
-        counterNum.innerHTML = parseInt(counterNum.innerHTML) + 1
-        return returnColor()
-    }
-    if (action == -1){
-        counterNum.innerHTML = parseInt(counterNum.innerHTML) - 1
-        return returnColor()
-    }
+console.log(reviews[0]['img'])
+personImage.src = imageSrc;
+
+let btnNext = document.getElementById('next')
+let btnPrevious = document.getElementById('previous')
+btnNext.addEventListener('click', goNext)
+btnPrevious.addEventListener('click', goPrevious)
+
+function goNext(){
+  id += 1
+
+  imageSrc = reviews[id-1]['img']
+  personImage.src = imageSrc;
 }
 
-function returnColor(){
-    if (parseInt(counterNum.innerHTML) > 0){
-        counterNum.style.color = 'green'
-        return
-    }
-    if (parseInt(counterNum.innerHTML) == 0){
-        counterNum.style.color = 'black'
-        return
-    }
-    if (parseInt(counterNum.innerHTML) < 0){
-        counterNum.style.color = 'red'
-        return
-    }
+function goPrevious(){
+  id -= 1
+}
+
+function changeReview(){
+  
 }

@@ -17,8 +17,8 @@ h1{
 }
 
 img{
-    width: 225px;
-    height: 225px;
+    width: 35vh;
+    height: 35vh;
     background-size: cover;
     border-radius: 50%;
 }
@@ -30,7 +30,7 @@ div.name{
 
 div.name p{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2vw;
     margin: 5px
 }
 
@@ -42,7 +42,7 @@ div.job-position{
 div.job-position p{
     color: blue;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.5vw;
     margin: 5px;
 }
 
@@ -53,7 +53,7 @@ div.review{
 
 div.review p{
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 1.2vw;
     margin: 5px;
 }
 
@@ -63,7 +63,7 @@ div.surprise{
 
 div.surprise button{
 
-    font-size: 20px;
+    font-size: 1.2vw;
     margin: 5px;
 }
 
@@ -81,7 +81,7 @@ button{
     text-align:center;
     transition: all 0.2s;
     border: none;
-    width: 12%
+    width: 10vw
 }
 
 button:hover{
@@ -101,7 +101,7 @@ a {
     padding: 8px 16px;
     background-color: #89CFF0;
     color: black;
-    font-size: 20px;
+    font-size: 2vw;
   }
   
 a:hover{
