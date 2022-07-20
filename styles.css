@@ -1,0 +1,114 @@
+body{
+    text-align: center;
+}
+
+.title{
+    height: 25vh;
+    width: 100%;
+    vertical-align: middle;
+    display: table;
+}
+
+h1{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 225px;
+    height: 225px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+div.name{
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+div.name p{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 5px
+}
+
+div.job-position{
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+div.job-position p{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 5px;
+}
+
+div.review{
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+div.review p{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 5px;
+}
+
+div.surprise{
+    margin: 0 auto;
+}
+
+div.surprise button{
+
+    font-size: 20px;
+    margin: 5px;
+}
+
+button{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    border: none;
+    width: 12%
+}
+
+button:hover{
+    background-color:#4095c6;
+    }
+
+@media all and (max-width:30em){
+    button3{
+        display:block;
+        margin:0.2em auto;
+    }
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #89CFF0;
+    color: black;
+    font-size: 20px;
+  }
+  
+a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
