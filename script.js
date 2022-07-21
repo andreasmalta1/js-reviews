@@ -95,5 +95,7 @@ function randomReview(){
   changeReview()
 }
 
-changeReview()
+window.addEventListener('DOMContentLoaded', function (){
+  changeReview()
+})
 
