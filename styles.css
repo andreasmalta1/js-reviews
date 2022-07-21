@@ -3,7 +3,7 @@ body{
 }
 
 .title{
-    height: 25vh;
+    height: 15vh;
     width: 100%;
     vertical-align: middle;
     display: table;
@@ -31,7 +31,8 @@ div.name{
 div.name p{
     font-weight: bold;
     font-size: 2vw;
-    margin: 5px
+    margin: 5px;
+    text-transform: capitalize;
 }
 
 div.job-position{

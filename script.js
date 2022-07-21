@@ -45,28 +45,55 @@ let personJob = document.getElementById('job-position')
 let personReview = document.getElementById('review')
 
 let id = 1
-
-imageSrc = reviews[id-1]['img']
-
-console.log(reviews[0]['img'])
-personImage.src = imageSrc;
+let length = reviews.length
 
 let btnNext = document.getElementById('next')
-let btnPrevious = document.getElementById('previous')
+let btnPrevious = document.getElementById('prev')
+let btnSurprise = document.getElementById('surprise')
 btnNext.addEventListener('click', goNext)
 btnPrevious.addEventListener('click', goPrevious)
+btnSurprise.addEventListener('click', randomReview)
 
 function goNext(){
   id += 1
-
-  imageSrc = reviews[id-1]['img']
-  personImage.src = imageSrc;
+  if (id > length){
+    id = 1
+  }
+  changeReview()
 }
 
 function goPrevious(){
   id -= 1
+  if (id <= 0){
+    id = length
+  }
+  changeReview()
 }
 
 function changeReview(){
-  
+  imageSrc = reviews[id-1]['img']
+  nameText = reviews[id-1]['name']
+  jobText = reviews[id-1]['job']
+  reviewText = reviews[id-1]['text']
+  personImage.src = imageSrc;
+  personName.innerHTML = nameText
+  personJob.innerHTML = jobText
+  personReview.innerHTML = reviewText
+
 }
+
+
+1 - 4
+
+function randomReview(){
+  do {
+    x = Math.floor((Math.random() * length) + 1);
+    console.log(x)
+  }
+  while (x == id);
+  id = x
+  changeReview()
+}
+
+changeReview()
+
